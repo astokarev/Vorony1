@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/countP2"
+        android:layout_width="178dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="32dp"
+        android:rotation="180"
+        android:text="Count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starP2" />
+
+    <ImageView
+        android:id="@+id/starP2"
+        android:layout_width="78dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="36dp"
+        android:rotation="180"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/voronyP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:rotation="180"
+        android:text="Hello World!"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countP2" />
+
+    <ImageView
+        android:id="@+id/starP1"
+        android:layout_width="78dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="36dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/voronyP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/countP1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <Button
+        android:id="@+id/countP1"
+        android:layout_width="178dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="32dp"
+        android:text="Count"
+        app:layout_constraintBottom_toTopOf="@+id/starP1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

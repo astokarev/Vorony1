@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -12,8 +13,9 @@
         android:layout_height="149dp"
         android:layout_marginStart="116dp"
         android:layout_marginTop="32dp"
+        android:background="@color/purple_500"
         android:rotation="180"
-        android:text="Count"
+        android:text="Игрок 2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starP2" />
 
@@ -29,18 +31,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
-    <TextView
-        android:id="@+id/voronyP2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:rotation="180"
-        android:text="Hello World!"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countP2" />
-
     <ImageView
         android:id="@+id/starP1"
         android:layout_width="78dp"
@@ -52,25 +42,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
-    <TextView
-        android:id="@+id/voronyP1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@+id/countP1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
-
     <Button
         android:id="@+id/countP1"
         android:layout_width="178dp"
         android:layout_height="149dp"
         android:layout_marginStart="116dp"
         android:layout_marginBottom="32dp"
-        android:text="Count"
+        android:background="@color/teal_200"
+        android:text="Игрок 1"
         app:layout_constraintBottom_toTopOf="@+id/starP1"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/restartBtn"
+        android:layout_width="343dp"
+        android:layout_height="88dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/countP1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countP2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
